@@ -37,10 +37,10 @@ def urgency_score(deadline_str, now_utc):
     if hours_left < 0:
         overdue_hours = abs(hours_left)
         if overdue_hours < 24:
-            reason = f"Overdue by {int(overdue_hours)}h — requires immediate catch-up"
+            reason = f"Overdue by {int(overdue_hours)}h - requires immediate catch-up"
         else:
             days = max(1, int(overdue_hours // 24))
-            reason = f"Overdue by {days}d — deadline has passed"
+            reason = f"Overdue by {days}d - deadline has passed"
         return 10.0, reason, "overdue", True, hours_left
 
     if hours_left <= 12:
@@ -131,7 +131,7 @@ def recommend(tasks):
         task_out["importance"] = importance
         task_out["difficulty"] = difficulty
         task_out["estimatedHours"] = est_hours
-        task_out["reason"] = f"{urgency_reason} · Importance {importance}/5 · Difficulty {difficulty}/5"
+        task_out["reason"] = f"{urgency_reason} | Importance {importance}/5 | Difficulty {difficulty}/5"
         task_out["scoreBreakdown"] = {
             "urgency": round(urgency, 1),
             "urgencyScore": round(urgency_component, 2),

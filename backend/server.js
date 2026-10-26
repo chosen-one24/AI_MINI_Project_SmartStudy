@@ -283,8 +283,11 @@ function executePythonAI(scriptPath, payload) {
         }
       }, 8000);
 
+      child.stdout.setEncoding("utf8");
+      child.stderr.setEncoding("utf8");
+
       child.stdout.on("data", (chunk) => {
-        stdout += chunk.toString();
+        stdout += chunk;
       });
 
       child.stderr.on("data", (chunk) => {
