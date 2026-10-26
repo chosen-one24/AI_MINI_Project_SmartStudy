@@ -44,19 +44,26 @@ Where:
 1. **AI Heuristic Coach**:
    - Analyzes pending study tasks, generates personalized recommendations, and displays transparent score factor breakdowns.
    - Interactive **Formula** toggle in the dashboard explaining the exact evaluation criteria.
-2. **Search & Instant Filtering**:
+2. **Dedicated Workspace Sidebar**:
+   - **Dashboard**: Complete overview with stats, tasks, progress tracking, and AI Heuristic Coach.
+   - **My Study Tasks**: Full-width academic task manager with subject filtering, multi-criteria sorting, and instant search.
+   - **Study Planner & Pomodoro Timer**: Chronological study roadmap (Overdue, Due Today, Due Soon, Upcoming) paired with an interactive 25/5/15-minute Pomodoro focus timer.
+   - **📇 Flashcards & Spaced Repetition**: 3D interactive flip cards implementing Leitner/SuperMemo spaced repetition (Hard, Good, Easy) with custom card creation.
+   - **🗓️ Calendar View**: Monthly visual calendar mapping assignment deadlines, with click-to-inspect day details and direct date scheduling.
+   - **📚 Subjects & Syllabus Tracker**: Curriculum progress breakdown, academic credit management (e.g. CS201, CS302), and coursework topic completion per course.
+3. **Search & Instant Filtering**:
    - Instant search across topics, assignments, and subjects.
    - Filter tabs: **All Tasks**, **To Do**, **Completed**, and **Overdue** (with visual alert badges).
-3. **Multi-Criteria Sorting**:
+4. **Multi-Criteria Sorting**:
    - Sort by **Earliest Deadline**, **AI Priority Score**, **Highest Importance**, **Hardest First**, or **Estimated Duration**.
-4. **Study Workload & Analytics**:
+5. **Study Workload & Analytics**:
    - Total tasks, completion percentage, remaining pending tasks, and **Total Estimated Study Workload (Hours)**.
-5. **One-Click Demo Sample Seeding**:
-   - Populates 5 balanced, realistic university coursework tasks across varied subjects and urgency levels with zero duplicate creation.
-6. **Safe Task Management**:
+6. **One-Click Demo Sample Seeding**:
+   - Populates balanced, realistic university coursework tasks across varied subjects and urgency levels with zero duplicate creation.
+7. **Safe Task Management**:
    - Modal confirmation before task deletion to prevent accidental data loss.
    - Quick deadline presets (`+8h Today`, `+1 Day`, `+3 Days`, `+1 Week`) for rapid assignment logging.
-7. **Resilient Python Execution**:
+8. **Resilient Python Execution**:
    - Multi-command fallback (`python` $\rightarrow$ `py` $\rightarrow$ `python3`), Windows CP1252/UTF-8 encoding safety, and process timeout safeguards.
 
 ---
